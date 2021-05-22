@@ -67,10 +67,10 @@ var obstaculos = {
             x: LARGURA,
             //largura: 30 + Math.floor(21 * Math.random()),
             largura: 30,
-            altura: 28 + Math.floor(110 * Math.random()),
+            altura: 26 + Math.floor(108 * Math.random()),
             cor: this.cores[Math.floor(5 * Math.random())]
         })
-        this.tempoInsere = 30 + Math.floor(23 * Math.random())
+        this.tempoInsere = 30 + Math.floor(26 * Math.random())
     },
     atualiza: function() {
         if (this.tempoInsere == 0) {
