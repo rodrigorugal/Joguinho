@@ -66,8 +66,8 @@ var obstaculos = {
         this._obs.push({
             x: LARGURA,
             //largura: 30 + Math.floor(21 * Math.random()),
-            largura: 30,
-            altura: 26 + Math.floor(108 * Math.random()),
+            largura: 28,
+            altura: 24 + Math.floor(100 * Math.random()),
             cor: this.cores[Math.floor(5 * Math.random())]
         })
         this.tempoInsere = 30 + Math.floor(26 * Math.random())
@@ -143,8 +143,7 @@ function main() {                   //FUNÇÃO PRINCIPAL // cria a tela do jogo
     if (recorde == null) {
         recorde  = 0
     }
-    img = new Image()
-    img.src = "../img/fundoM.jpg"
+    
     roda()
 }
 function roda() {                  //FUNÇÃO DE REPETIÇÃO // continua o fluxo do jogo
@@ -162,7 +161,7 @@ function atualiza() {               //FUNÇÃO DE ATUALIZAÇÃO // sempre q é c
     }
 }
 function desenhar() {               //FUNÇÃO QUE DESENHA O MAPA DO JOGO // imprime na tela os componentes do jogo como o chão, os obstaculos e o player
-    ctx.fillStyle = "#80daff"
+    ctx.fillStyle = "black"
     ctx.fillRect(0, 0, LARGURA, ALTURA)
 
 
